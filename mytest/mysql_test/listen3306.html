@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="tel" id='id'>
+		<input type="text" id='name'>
+		<input type="text" id="url">
+		<button id="submit">发送试试</button>
+		<p></p>
+	</body>
+	<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$('#submit').click(function() {
+			var id=$('#id').val();
+			var name=$('#name').val();
+			var urls=$('#url').val();
+			$.ajax({
+				type: "get",
+				url: "http:127.0.0.1:8888",
+				//		async:true,
+				// dataType:'jsonp',
+				data: {
+					id: id,
+					name:name,
+					url: urls
+				},
+				success: function(data) {
+					console.log(data);
+					console.log(JSON.parse(data));
+				},
+				error: function(data) {
+					console.log(0);
+				}
+			});
+		})
+	</script>
+
+</html>

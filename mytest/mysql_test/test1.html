@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="worth" id="worth" value="" />
+		<button>点击获取数据</button>
+		<p class="show">
+			
+		</p>
+	</body>
+	<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script  type="text/javascript" charset="utf-8">
+	/*	$(function(){
+            $('button').click(function()
+            {
+                    
+                    $.getJSON('localhost:3305',function(data){
+                    	$('p').html(data);
+                    })
+
+            })
+      })*/
+//		$(function(){
+//                      $(':button').click(function()
+//                      {
+//                              
+//                              $.ajax({
+//                                      url:'localhost:3305',
+//                                      success:function(da)
+//                                      {
+//                                              $('p').html(da);
+//                                              
+//                                      },
+//                                      error:function(data)
+//                                      {console.log(data)
+//		                                        	
+//                                      }
+//                              });
+//                      })
+//              })
+function a(worth){
+	var o;
+	
+//	console.log(typeof worth)
+	switch (typeof worth){
+	
+			case 'undefined': 
+			break;
+			case 'boolean':;
+			case 'number':if(worth!=worth){o='NaN'; return} 
+			
+			case 'string':o=worth;
+			break;
+			case 'object': if(worth){o='NULL';}
+			o=[];
+			for(key in worth){
+				o.push(worth[key]);	
+			}
+			break;
+			
+		default:
+			break;
+	}
+	return o
+}
+console.log( a(false));
+console.log( a(1));
+
+console.log( a("aaa"));
+
+console.log( a([1.,'q',1,'ss','asd']));
+console.log( a({a:'n',c:'b'}));
+console.log( a());
+	</script>
+</html>

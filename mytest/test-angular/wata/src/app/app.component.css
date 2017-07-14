@@ -1,0 +1,65 @@
+.index-bg {
+  width: 100%;
+  height: 4.18rem;
+  background: url('./../assets/img/banner1.png') no-repeat center;
+  background-size: cover;
+}
+
+.index-logo {
+  width: 100%;
+  height: 3.92rem;
+  background: url('./../assets/img/index-LOGO.png') no-repeat;
+  background-size: 2.68rem 2.5rem;
+  background-position: center 0.4rem;
+}
+
+.navbox {
+  width: 100%;
+}
+
+.navbox li {
+  width: 33.33%;
+  height: 1.76rem;
+  float: left;
+}
+
+.navbox li a {
+  width: 100%;
+  display: block;
+  color: #000;
+  font-size: 0.24rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.navbox dt {
+  width: 100%;
+  background-size: 0.88rem 0.88rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 1.08rem;
+}
+
+.navbox dd {
+  text-align: center;
+  height: 0.24rem;
+}
+
+.navbox .products dt {
+  background-image: url('./../assets/img/product_center.png');
+}
+.navbox .copyright dt {
+  background-image: url('./../assets/img/copyright.png');
+} 
+.navbox .send-goods dt {
+  background-image: url('./../assets/img/send_goods.png');
+}
+.navbox .agent dt {
+  background-image: url('./../assets/img/agentapply.png');
+}
+.navbox .design dt {
+  background-image: url('./../assets/img/designlogo.png');
+}
+.navbox .agent-check dt {
+  background-image: url('./../assets/img/agent_query.png');
+}
